@@ -1,15 +1,18 @@
 # account
 
-# Github SSL connect error
+## Github SSL connect error
+ * git version up 2.18
+  * rpm -Uvh http://opensource.wandisco.com/centos/6/git/x86_64/wandisco-git-release-6-1.noarch.rpm
+  * yum --enablerepo=WANdisco-git --disablerepo=base,updates install git
   * yum update -y nss curl
   
-# System PATH
+## System PATH
 ```
 PATH=$PATH:$HOME/bin:/root/app/pytho3/bin
 export LD_LIBRARY_PATH=$HOME/app/pytho3/lib:$LD_LIBRARY_PATH
 alias run='python3 /root/accountbook/manage.py runserver 0.0.0.0:8000'
 ```
-# Databases setting.py
+## Databases setting.py
 ```
 DATABASES = {
     'default': {
